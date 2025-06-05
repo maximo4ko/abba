@@ -21,25 +21,44 @@
             <span class="time">12:30</span>
             <span class="icons">📶 🔋</span>
         </div>
-        <div class="quick-settings-panel">
-            <button class="qs-tile">📶 Wi-Fi</button>
-            <button class="qs-tile">🔊 Звук</button>
-            <button class="qs-tile">🔆 Яркость</button>
-        </div>
 
-        <!-- Значки приложений -->
+        <!-- Сетка приложений 4x4 -->
         <div class="app-grid">
-            <div class="app-icon">📞</div>
-            <div class="app-icon">✉️</div>
-            <div class="app-icon">🌐</div>
-            <div class="app-icon">🎵</div>
+            <!-- Приложения (16 штук) -->
+            <div class="app-icon" data-app="phone">📞</div>
+            <div class="app-icon" data-app="messages">✉️</div>
+            <div class="app-icon" data-app="browser">🌐</div>
+            <div class="app-icon" data-app="music">🎵</div>
+            <div class="app-icon" data-app="camera">📷</div>
+            <div class="app-icon" data-app="gallery">🖼️</div>
+            <div class="app-icon" data-app="maps">🗺️</div>
+            <div class="app-icon" data-app="weather">☀️</div>
+            <div class="app-icon" data-app="calendar">📅</div>
+            <div class="app-icon" data-app="notes">📝</div>
+            <div class="app-icon" data-app="settings">⚙️</div>
+            <div class="app-icon" data-app="calculator">🧮</div>
+            <div class="app-icon" data-app="clock">⏰</div>
+            <div class="app-icon" data-app="mail">📨</div>
+            <div class="app-icon" data-app="files">📁</div>
+            <div class="app-icon" data-app="contacts">👤</div>
         </div>
 
-        <!-- Панель навигации (как в Android) -->
+        <!-- Панель навигации -->
         <div class="nav-bar">
             <button class="nav-btn">◀</button>
             <button class="nav-btn">⌂</button>
             <button class="nav-btn">☰</button>
+        </div>
+    </div>
+
+    <!-- Окно приложения (появляется при клике) -->
+    <div class="app-window" id="app-window">
+        <div class="app-header">
+            <button class="back-btn">← Назад</button>
+            <h2 class="app-title">Приложение</h2>
+        </div>
+        <div class="app-content">
+            <p>Здесь контент приложения...</p>
         </div>
     </div>
 
